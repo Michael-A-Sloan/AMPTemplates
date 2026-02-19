@@ -1,7 +1,7 @@
 [
     {
         "ConfigFile": "ServerConfig.toml",
-        "AutoMap": true,
+        "AutoMap": false,
         "Importable": true,
         "ConfigType": "ini",
         "ConfigFormat": "{0} = \"{1}\"",
@@ -9,7 +9,7 @@
     },
     {
         "ConfigFile": "ServerConfig.toml",
-        "AutoMap": true,
+        "AutoMap": false,
         "Importable": true,
         "ConfigType": "ini",
         "ConfigFormat": "{0} = {1}",
