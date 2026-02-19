@@ -1,18 +1,36 @@
 [
-    {
-        "ConfigFile": "ServerConfig.toml",
-        "AutoMap": false,
-        "Importable": true,
-        "ConfigType": "ini",
-        "ConfigFormat": "{0} = \"{1}\"",
-        "ConfigFormatRegex": "^(?<key>.+?) = \"(?<value>.*?)\"$"
-    },
-    {
-        "ConfigFile": "ServerConfig.toml",
-        "AutoMap": false,
-        "Importable": true,
-        "ConfigType": "ini",
-        "ConfigFormat": "{0} = {1}",
-        "ConfigFormatRegex": "^(?<key>.+?) = (?<value>[^\"]*?)$"
-    }
+  {
+    "ConfigFile": "ServerConfig.toml",
+    "AutoMap": false,
+    "Importable": true,
+    "ConfigType": "ini",
+    "ConfigFormat": "{0} = {1}",
+    "ConfigFormatRegex": "^(?<key>.+?) = (?<value>[^\"]*?)$",
+    "Subsections": [
+      {
+        "Heading": "Misc",
+        "SettingMappings": {
+          "Misc.ImScaredOfUpdates": "ImScaredOfUpdates",
+          "Misc.SendErrors": "SendErrors",
+          "Misc.SendErrorsShowMessage": "SendErrorsShowMessage"
+        }
+      },
+      {
+        "Heading": "General",
+        "SettingMappings": {
+          "General.AuthKey": "AuthKey",
+          "General.Name": "Name",
+          "General.Description": "Description",
+          "General.Tags": "Tags",
+          "General.Port": "Port",
+          "General.Private": "Private",
+          "General.MaxPlayers": "MaxPlayers",
+          "General.MaxCars": "MaxCars",
+          "General.ResourceFolder": "ResourceFolder",
+          "General.LogChat": "LogChat",
+          "General.Debug": "Debug"
+        }
+      }
+    ]
+  }
 ]
